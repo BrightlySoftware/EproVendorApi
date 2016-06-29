@@ -13,6 +13,9 @@ CSHARPDEFAULTNAMESPACE: DSI.SDK.ProcurementVendor
 JAVADEFAULTNAMESPACE: io.dudesolutions.ProcurementVendor
 BRANDLABEL: Dude Solutions, Inc.
 USERAGENT: Dude SDK
+NULLIFY404: TRUE
+VALIDATEREQUIREDPARAMETERS: FALSE
+COLLECTPARAMETERS: TRUE
 
 # Dude Procurement Vendor Api
 ![Dude Solutions](https://dudesolutions.com/assets/img/logo.png)
@@ -174,8 +177,8 @@ Represents a paged object.
 + `supplierOrderNumber`: `12345ABCD` (string, required) - The supplier order number assigned to the order.
 + `supplierOrderLink`: `https://abcvendorinc.com/orders/12345ABCD` (string, optional) - The supplier order link assigned to the order.
 + `supplierInvoiceNumber`: `12345ABCD` (string, optional) - The supplier invoice number to the order.
-+ `supplierOrderLastUpdatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - The last date and time the supplier order was last updated.
-+ `supplierOrderCreatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - The date and time the supplier order was created.
++ `supplierOrderLastUpdatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - {DATETIME} The last date and time the supplier order was last updated.
++ `supplierOrderCreatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - {DATETIME} The date and time the supplier order was created.
 + `purchaseOrderNumber` : `12345ABCD` (string, optional) - The purchase order number assigned to the order.
 + `orderCreatedByUserId` : 12345 (number, optional) - {INT} The ID for the user that created the order.
 + `orderSubTotal` (Currency, optional) - The sub total of the order.
@@ -189,10 +192,10 @@ Represents a paged object.
 + `unit` : `USD` (string, required) - The ISO 4217 currency code.
 
 ## Base Audit Object (object)
-+ `createdDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - The date and time in ISO-8601 format the record was created.
++ `createdDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - {DATETIME} The date and time in ISO-8601 format the record was created.
 + `createdByUser` (Base User Object, optional) - Information about the user who created the record.
 + `createdByApiClient` (Base Client Object, optional) - Information about the client who created the record.
-+ `updatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - The date and time in ISO-8601 format the record was last updated.
++ `updatedDateTime`: `2015-01-01T00:00:00.123Z` (string, optional) - {DATETIME} The date and time in ISO-8601 format the record was last updated.
 + `updatedByUser` (Base User Object, optional) - Information about the user who last modified the record.
 + `updatedByApiClient` (Base Client Object, optional) - Information about the client who last modified the record.
 

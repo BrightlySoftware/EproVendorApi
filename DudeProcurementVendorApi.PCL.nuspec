@@ -25,6 +25,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="code\DudeEproVendorApi.PCL\bin\$configuration$\DudeEproVendorApi.PCL.dll" target="lib\net45" />
+    <file src="code\DudeProcurementVendorApi.PCL\bin\$configuration$\DudeProcurementVendorApi.PCL.dll" target="lib\net45" />
   </files>
 </package>
